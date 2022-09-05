@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-mongoose.connect(process.env.CONNECTION_URL || "mongodb+srv://admin:12345@furntiure-mern-cluster.xfd7zor.mongodb.net/?retryWrites=true&w=majority", {
+mongoose.connect(process.env.CONNECTION_URL || "", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
